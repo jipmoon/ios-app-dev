@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var catYearTextField: UITextField!
+    @IBOutlet var catYearsAge: UILabel!
+    @IBAction func submitButtonTapped(_ sender: AnyObject) {
+        
+        let ageInCatYears = Int(catYearTextField.text!)!*7
+        catYearsAge.text = String(ageInCatYears)
+        
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
