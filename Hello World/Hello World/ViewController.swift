@@ -10,13 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var textField: UITextField!
-
-    @IBAction func submitButton(_ sender: AnyObject) {
-        
-        nameLabel.text = textField.text
-    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
